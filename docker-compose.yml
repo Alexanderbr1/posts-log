@@ -1,0 +1,37 @@
+version: '3.5'
+
+services:
+  posts-log:
+    build: ./
+    command: ./posts-log
+    hostname: postslog
+    ports:
+      - "9000:9000"
+    depends_on:
+      - mongodb
+    environment:
+      - DB_URI=mongodb://mongodb
+      - DB_USERNAME=root
+      - DB_PASSWORD=qwerty
+      - DB_DATABASE=admin
+      - DB_COLLECTION=logs
+      - SERVER_HOST=postslog
+      - SERVER_PORT=9000
+    networks:
+      - app_log
+  mongodb:
+    restart: always
+    image: mongo:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=qwerty
+      - MONGODB_DATABASE=admin
+    ports:
+      - "27017:27017"
+    networks:
+      - app_log
+
+networks:
+  app_log:
+    name: post_network
+    driver: bridge
