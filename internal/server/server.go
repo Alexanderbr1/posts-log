@@ -2,9 +2,9 @@ package server
 
 import (
 	"fmt"
+	logs "github.com/Alexanderbr1/posts-log/pkg/proto"
 	"google.golang.org/grpc"
 	"net"
-	logs "posts-log/pkg/proto"
 )
 
 type Server struct {

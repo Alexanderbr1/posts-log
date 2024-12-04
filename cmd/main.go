@@ -2,14 +2,14 @@ package main
 
 import (
 	"context"
+	"github.com/Alexanderbr1/posts-log/internal/config"
+	"github.com/Alexanderbr1/posts-log/internal/repository"
+	"github.com/Alexanderbr1/posts-log/internal/server"
+	"github.com/Alexanderbr1/posts-log/internal/service"
+	"github.com/Alexanderbr1/posts-log/pkg/database"
 	"log"
 	"os"
 	"os/signal"
-	"posts-log/internal/config"
-	"posts-log/internal/repository"
-	"posts-log/internal/server"
-	"posts-log/internal/service"
-	"posts-log/pkg/database"
 	"syscall"
 )
 

@@ -2,9 +2,9 @@ package service
 
 import (
 	"context"
-	"posts-log/internal/repository"
-	"posts-log/pkg/domain"
-	logs "posts-log/pkg/proto"
+	"github.com/Alexanderbr1/posts-log/internal/repository"
+	"github.com/Alexanderbr1/posts-log/pkg/domain"
+	logs "github.com/Alexanderbr1/posts-log/pkg/proto"
 )
 
 type LogsService struct {

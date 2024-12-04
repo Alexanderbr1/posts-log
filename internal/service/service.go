@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"posts-log/internal/repository"
-	logs "posts-log/pkg/proto"
+	"github.com/Alexanderbr1/posts-log/internal/repository"
+	logs "github.com/Alexanderbr1/posts-log/pkg/proto"
 )
 
 type Logs interface {

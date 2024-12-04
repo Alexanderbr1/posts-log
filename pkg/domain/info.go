@@ -2,7 +2,7 @@ package domain
 
 import (
 	"errors"
-	logs "posts-log/pkg/proto"
+	logs "github.com/Alexanderbr1/posts-log/pkg/proto"
 	"time"
 )
 

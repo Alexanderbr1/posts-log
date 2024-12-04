@@ -2,9 +2,9 @@ package repository
 
 import (
 	"context"
+	"github.com/Alexanderbr1/posts-log/internal/config"
+	"github.com/Alexanderbr1/posts-log/pkg/domain"
 	"go.mongodb.org/mongo-driver/mongo"
-	"posts-log/internal/config"
-	"posts-log/pkg/domain"
 )
 
 type LogsRepository struct {

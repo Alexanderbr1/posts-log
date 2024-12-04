@@ -1,4 +1,4 @@
-module posts-log
+module github.com/Alexanderbr1/posts-log
 
 go 1.19
 
